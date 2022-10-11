@@ -1,5 +1,3 @@
-// import { FieldState } from "final-form";
-
 const PHONE_RE = /^\+38\s?\(\d\d\d\)\s?\d\d\d[-\s]?\d\d[-\s]?\d\d$/;
 const EMAIL_RE = /^\w[\w.-_+]{0,}\w@\w[\w.-_]{0,}\w/;
 const DOMAIN_ZONE_RE = /.*\.[a-zA-Z]{2,}$/;

@@ -1,5 +1,4 @@
 import { AppShell, Header } from "@mantine/core";
-// import "normalize.css";
 
 import { Providers } from "../Providers/Providers";
 import { UserForm } from "../UserForm/UserForm";

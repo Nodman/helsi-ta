@@ -13,11 +13,26 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +72 ~/repos/helsi-ta/src/components/RFFForm/useFormConfig.tsx
+badd +2 ~/repos/helsi-ta/src/components/RFFForm/useFormConfig.tsx
+badd +1 ~/repos/helsi-ta/src/components/Root/Root.tsx
+badd +2 ~/repos/helsi-ta/src/utils/chunk.ts
+badd +1 ~/repos/helsi-ta/src/utils/form-formatters.ts
+badd +1 ~/repos/helsi-ta/src/utils/form-validators.ts
+badd +1 ~/repos/helsi-ta/src/hooks/use-input-toggle.tsx
+badd +1 ~/repos/helsi-ta/src/hooks/use-toggle.ts
+badd +1 ~/repos/helsi-ta/src/components/UserForm/config.ts
+badd +1 ~/repos/helsi-ta/src/components/UserForm/UserForm.module.css
+badd +2 ~/repos/helsi-ta/src/components/UserForm/UserForm.tsx
+badd +1 ~/repos/helsi-ta/src/components/RFFForm/Form.tsx
+badd +1 ~/repos/helsi-ta/src/components/RFFForm/InputDate.tsx
+badd +1 ~/repos/helsi-ta/src/components/RFFForm/InputSelect.tsx
+badd +1 ~/repos/helsi-ta/src/components/RFFForm/InputText.tsx
+badd +0 ~/repos/helsi-ta/src/components/ColorSchemeToggle/ColorSchemeToggle.tsx
 argglobal
 %argdel
-edit ~/repos/helsi-ta/src/components/RFFForm/useFormConfig.tsx
+edit ~/repos/helsi-ta/src/components/ColorSchemeToggle/ColorSchemeToggle.tsx
 argglobal
+balt ~/repos/helsi-ta/src/components/RFFForm/useFormConfig.tsx
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -28,11 +43,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 72 - ((0 * winheight(0) + 26) / 52)
+let s:l = 1 - ((0 * winheight(0) + 26) / 52)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 72
+keepjumps 1
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
