@@ -21,7 +21,8 @@ export const Providers = ({ children }: PropsT): React.ReactElement => {
     >
       <MantineProvider
         withNormalizeCSS
-        theme={{ primaryColor: "orange", colorScheme }}
+        withGlobalStyles
+        theme={{ primaryColor: "cyan", colorScheme }}
       >
         {children}
       </MantineProvider>

@@ -1,9 +1,9 @@
 import { AppShell, Header } from "@mantine/core";
 // import "normalize.css";
 
-import { Providers } from "../Providers";
-import { Form } from "../Form";
-import { ColorSchemeToggle } from "../ColorSchemeToggle";
+import { Providers } from "../Providers/Providers";
+import { UserForm } from "../UserForm/UserForm";
+import { ColorSchemeToggle } from "../ColorSchemeToggle/ColorSchemeToggle";
 
 export const Root = (): React.ReactElement => {
   return (
@@ -24,7 +24,7 @@ export const Root = (): React.ReactElement => {
           },
         })}
       >
-        <Form />
+        <UserForm />
       </AppShell>
     </Providers>
   );
